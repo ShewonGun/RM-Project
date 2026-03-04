@@ -23,7 +23,7 @@ const Navbar = ({ title, showBack = true }) => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between bg-[#12285c] px-5 py-3.5 shadow-lg shrink-0 relative z-40">
+    <div className="flex items-center justify-between bg-[#12285c] px-5 py-3.5 shadow-lg shrink-0 sticky top-0 z-40">
       {/* Back button */}
       {showBack ? (
         <button
