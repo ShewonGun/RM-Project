@@ -143,7 +143,7 @@ const CreatedSmvPage = () => {
         />
         <div className="flex flex-wrap items-center gap-3 sm:ml-auto">
           <div className="flex items-center gap-2">
-            <span className="text-white text-sm font-medium whitespace-nowrap">Product</span>
+            <span className="text-[#12285c] text-sm font-medium whitespace-nowrap">Product</span>
             <div className="relative">
               <select value={filterProduct} onChange={(e) => setFilterProduct(e.target.value)} className={selClass}>
                 <option>All</option>
@@ -153,7 +153,7 @@ const CreatedSmvPage = () => {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-white text-sm font-medium whitespace-nowrap">Material</span>
+            <span className="text-[#12285c] text-sm font-medium whitespace-nowrap">Material</span>
             <div className="relative">
               <select value={filterMaterial} onChange={(e) => setFilterMaterial(e.target.value)} className={selClass}>
                 <option>All</option>

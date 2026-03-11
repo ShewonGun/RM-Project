@@ -2,14 +2,14 @@ import SMV from "../models/SMV.js";
 
 const generateCode = async () => {
   const count = await SMV.countDocuments();
-  const seq = count + 1;              // 1, 2, 3 ...
-  const seqStr = String(seq);         // sequential suffix
+  const seq = count + 1;              
+  const seqStr = String(seq);         
   const randomLen = 8 - seqStr.length;
   if (randomLen < 0) throw new Error("Sequence exceeds 8-digit code limit");
   const randomPart = randomLen > 0
     ? String(Math.floor(Math.random() * Math.pow(10, randomLen))).padStart(randomLen, "0")
     : "";
-  return randomPart + seqStr;         // e.g. "47283611"
+  return randomPart + seqStr;         
 };
 
 export const createSMV = async (req, res) => {
